@@ -1,3 +1,5 @@
+# This file contains scripts for creating the S3 bucket and the folder structure for the project.
+#  The S3 bucket will be used to store raw data, processed data, rejected data, Glue job scripts, miscellaneous files, and logs.
 # terraform {
 #   required_providers {
 #     aws = {
@@ -52,3 +54,5 @@ resource "aws_s3_object" "project_prefix_logs" {
   key     = "logs/"
   content = ""
 }
+
+
